@@ -1,0 +1,33 @@
+header{
+  margin-left: auto;
+  margin-right: auto;
+}
+body {
+  
+    background-color: #cdf0ff; 
+    /**/
+  }
+  main{
+    color:#000000;
+    
+    background-color: #ffffff;
+    /**/
+    border:#000000  solid 6px; 
+  }
+h1.titulo{
+    color:#ffffff;
+    text-align: center;
+    background-color: #0066aa;
+    border:#ff0000  solid 6px;
+   /* background-color: blue; */
+    /*
+    como configugar cores 
+    - pelo nome: exemplo red 
+    pelo codigo exemplo 
+    R - Red
+    G - Gren
+    B - Blue
+    vai de #00  a #ff
+    exemplo:
+    */
+}
