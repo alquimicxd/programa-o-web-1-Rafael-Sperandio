@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css item 4.css">
+</head>
+<body>
+    <div class=" flex flex1">
+    <h1 id="Filme1" class="titulo"></h1>
+    <h1 id="Filme2" class="titulo">aloooo</h1>
+    <h1 id="Filme3" class="titulo"></h1>
+</div>
+    <script>
+        class Filme{
+             constructor(titulo,ano,genero){
+            this.titulo=titulo;
+            this.ano=ano;
+            this.genero=genero;
+
+             }
+
+            gettitulo(){
+            return "titulo: " + this.titulo;
+            }
+            getano(){
+            return "ano do lançamento: "+ this.ano;
+            }
+            getgenero(){
+            return "genero :"+ this.genero;     
+            }    
+            
+        }
+        var f1 = new Filme("Senhor dos aneis","2001","fantasia");
+        document.getElementById("Filme1").innerHTML = f1.gettitulo() +", "+f1.getano() +", "+f1.getgenero();
+        var f2 = new Filme("kill bill","2004","ação");
+        document.getElementById("Filme2").innerHTML = f2.gettitulo() +", "+f2.getano() +", "+f2.getgenero();
+        var f3 = new Filme("zumbilandia","2009","comédia");
+        document.getElementById("Filme3").innerHTML = f3.gettitulo() +", "+f3.getano() +", "+f3.getgenero();
+    </script>
+    
+</body>
+</html>

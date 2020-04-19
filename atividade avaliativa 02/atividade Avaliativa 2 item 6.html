@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css botao.css">
+    <script>
+        function submit() {
+            var val1=  document.getElementById("campo1").value;
+
+            var	aux	=parseInt(val1);
+            var retorno;
+            /*
+            var	numero	=	document.getElementById("par ou impar");
+             <button onclick="submit()">fatorial valor</button>
+            */
+            retorno=1;
+           while(aux>1){
+               retorno*=aux;
+               aux--
+           }
+             document.getElementById("resultado").innerHTML = retorno;
+
+        }
+            </script>
+</head>
+<body>
+    <fieldset>
+        <label for="campo1" class="label">escreva um numero inteiro não negativo:</label><br>
+        <input type="number" id="campo1" name="campo1"><br>       
+        <button onclick="submit()" class="button">fatorial valor</button>
+    </fieldset>
+
+        <h1>resultado</h1>
+        <h1 id="resultado">?</h1>
+         
+</body>
+</html>

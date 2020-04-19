@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css item 4.css">
+
+    <title>Document</title>
+    <script>
+        function submit() {
+            var val1=  document.getElementById("campo1").value;
+            var val2=  document.getElementById("campo2").value;
+            var val3=  document.getElementById("campo3").value;
+            var	numero	=parseFloat(val1)+ parseFloat(val2) +parseFloat(val3) ;
+            /*
+            var	numero	=	document.getElementById("par ou impar");
+            */
+            alert(numero);
+             if((numero)%2==0){
+                alert("é par");
+             }else if(((numero)%2!=0)){
+                alert("é impar");
+             }
+
+        }
+            </script>
+</head>
+<body>
+    <!-- teste pra ver a tela em 600px
+    <h1 class="titulo1 ">besteira </h1> -->
+    <form action="submit()" class="flex1 flex2">
+        
+        <div>
+        <label for="fname" >val 1:</label><br>
+        <input type="text" id="campo1" name="fname" value=""><br>
+        </div>
+        <div>
+            <label for="fname">val 2:</label><br>
+            <input type="text" id="campo2" name="fname" value=""><br>
+        </div> 
+        <div>
+            <label for="fname">val 3:</label><br>
+            <input type="text" id="campo3" name="fname" value=""><br>
+        </div> 
+    
+    </form>
+      <button onclick="submit()">somar valores</button>
+         <h1 id="par ou impar"> </h1>
+         <!-- se quiser fazer aparecer em um h1  olhar html formulario . txt -->
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function criaLista() {
+        var elemento_pai = document.body;
+        var listaUL = document.createElement("UL");
+        listaUL.style.font = " 16px arial,";
+        listaUL.style.color = "blue";
+        var	palavras = ["abacate","banana","cebola","melancia"];
+        for	(var	i	=	0;	i	<	palavras.length;	i++)	{
+		var aux = palavras[i];
+        var li = document.createElement("LI");
+        var t = document.createTextNode(aux);
+        li.appendChild(t);
+        listaUL.appendChild(li)
+        }
+        elemento_pai.appendChild(listaUL);
+        }
+
+    </script>
+</head>
+<body>
+    
+       
+    <button onclick="criaLista()">cria uma lista</button>
+    <strong color = "blue"  font = " 16px arial," > titulo em negrito </strong>
+     <!--ainda falta O texto da lista deve ser em fonte “Arial”
+        , tamanho 16, cor azul. 
+        Coloque um título para essa lista, 
+        o mesmo deve ser em negrito.  -->
+</body>
+</html>

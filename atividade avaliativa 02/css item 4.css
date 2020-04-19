@@ -1,0 +1,49 @@
+.flex{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h1.titulo{
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    color:blue;
+    text-align: center;
+    background-color: yellow;
+    border:black  solid 6px;
+}
+
+@media only screen and (max-width: 1000px) {
+/**
+teste
+    **/
+    .titulo1{
+        margin-left: 40px;
+        margin-right: 40px;
+        
+        color:blue;
+        text-align: center;
+        background-color: yellow;
+        border:black  solid 6px;
+    }
+    .flex1{
+      display: flex;
+      align-items: stretch;
+      flex-direction: row; 
+       
+      
+    /**
+      flex-direction: column;  
+      width: 210px;
+      height: 500;
+      flex-wrap: wrap;
+    
+    **/
+    }
+    .flex2{
+        display: flex;
+        align-items: stretch;
+        flex-direction: column;
+        justify-content: space-around;
+    }

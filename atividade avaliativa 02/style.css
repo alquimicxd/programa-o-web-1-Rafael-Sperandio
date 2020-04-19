@@ -1,0 +1,95 @@
+
+body {
+  /*COR DO FUNDOS*/
+    background-color: #cdf0ff; 
+    /**/
+  }
+header{
+  margin: 20px 20px;
+}
+footer{
+  margin: 20px 20px ;
+}
+  main{
+    margin-left: 40px;
+    margin-right: 40px;
+    color:#000000;
+    
+    background-color: #ffffff;
+    /**/
+    border:#000000  solid 6px; 
+  }
+.titulo{
+    margin-left: 40px;
+    margin-right: 40px;
+    color:#ffffff;
+    text-align: center;
+    background-color: #0066aa;
+    border:#ff0000  solid 6px;
+   /* background-color: blue; */
+    /*
+    como configugar cores 
+    - pelo nome: exemplo red 
+    pelo codigo exemplo 
+    R - Red
+    G - Gren
+    B - Blue
+    vai de #00  a #ff
+    exemplo:
+    */
+}
+/*feitos pra 2 daqui */
+nav.space{
+  /* formatação dos epsacos do menu  */
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  
+}
+div.space{
+  /* formatação dos epsacos dos sub menu  */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  
+}
+.none{
+  display:none;
+}
+/*feitos pra 2  ate aqui */
+h1.space{
+  /* margin-right: 4px;  */
+}
+
+div.center{
+  align-content: space-between;
+
+}
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (min-width: 600px) {
+  .flex{
+    display: flex;
+    align-items: stretch;
+    flex-direction: row; 
+     
+    
+  /**
+    flex-direction: column;  
+    width: 210px;
+    height: 500;
+    flex-wrap: wrap;
+  
+  **/
+  }
+
+
+
+
+}
+

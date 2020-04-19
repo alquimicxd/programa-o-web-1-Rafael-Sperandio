@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- header, nav, main, footer--> 
+    <!--   class="titulo"       -->
+    <!--    id = tabela1          -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            function aparece(x,t) {
+             var y =document.getElementsByClassName(x);
+             var i=0;
+              while (i<t) { 
+                  y[i].style.display='block';
+                  i++;
+              }
+              
+            }
+            
+            function desaparece(x,t) {
+           var y =document.getElementsByClassName(x);
+              var i=0;
+              while (i<t) {
+                  y[i].style.display='none';
+                  i++;
+              }
+            }
+            </script>
+    </head>
+   
+
+    <header class="titulo" >
+    <h1 >Cabeçalho da página</h1>
+    </header>
+
+
+    <nav class="titulo space" style="flex-grow: 0.5">
+
+    <div onmouseover= "aparece('Institucional',2)"  onmouseout="desaparece('Institucional',2)">
+    <h1 class="space">Institucional</h1>
+    <h1 class="none Institucional">Localização </h1>
+    <h1 class="none Institucional">Estrutura </h1>
+    </div>
+    <div onmouseover= "aparece('Produtos',3)"  onmouseout="desaparece('Produtos',3)">
+    <h1 class="space">Produtos</h1>
+    <h1 class= "none Produtos"> Notebooks</h1>
+    <h1 class= "none Produtos"> Celulares</h1>
+    <h1 class= "none Produtos"> Eletrodomésticos</h1>
+    </div>
+    <div onmouseover= "aparece('Sobre',1)"  onmouseout="desaparece('Sobre',1)">
+    <h1 class="space">Sobre</h1>
+    <h1 class="none Sobre">Contato</h1>
+    </div>
+
+    </nav>
+    
+ 
+
+<main  style="flex-grow: 10" >
+    <h1>Conteúdo principal</h1>
+    <p>Cores:</p>
+    <ul>
+    <li> #0066aa (tom de azul escuro)</li>
+    <li>#cdf0ff (tom azul claro)</li>
+    <li>#ff0000 (vemelho)</li>
+    <li> #000000 (preto)</li>
+    <li> #ffffff (branco)</li>
+</ul>
+
+
+
+</main>
+
+
+
+
+<footer class="titulo">
+    <h1 >Rodapé da pagina</h1>
+</footer>
+<body>
+
+</body>
+</html>
