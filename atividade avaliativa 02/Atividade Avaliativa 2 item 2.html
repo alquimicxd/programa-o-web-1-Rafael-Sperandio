@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .borda{
+            border:black solid 6px;
+        }
+        .semborda{
+            border:black none 6px;
+        }
+    </style>
+    <script>
+        function borda(x) {
+           x.style="border:black solid 6px;"
+        }
+        function semborda(x) {
+           x.style="border:black none 6px;"
+        }
+        
+    </script>
+</head>
+<body>
+    <table onmouseover= "borda(this)"  onmouseout="semborda(this)" >
+        <tr >
+          <th ><img onmouseover= "borda(this)"  onmouseout="semborda(this)" src="xadres.jpg" alt="xadres.jpg" width="250" height="250"></th>
+          <th><img   onmouseover= "borda(this)"  onmouseout="semborda(this)"src="damas.jpg" alt="damas.jpg" width="250" height="250"></th>
+          <th><img  onmouseover= "borda(this)"  onmouseout="semborda(this)"src="domino.jpg" alt="dominó.jpg" width="250" height="250"></th>
+        </tr>
+        <tr >
+          <td><img  onmouseover= "borda(this)"  onmouseout="semborda(this)"src="domino.jpg" alt="dominó.jpg" width="250" height="250"></td>
+          <td><img onmouseover= "borda(this)"  onmouseout="semborda(this)" src="xadres.jpg" alt="xadres.jpg" width="250" height="250"></td>
+          <td><img   onmouseover= "borda(this)"  onmouseout="semborda(this)"src="damas.jpg" alt="damas.jpg" width="250" height="250"></td>
+        </tr>
+        <tr >
+          <td><img   onmouseover= "borda(this)"  onmouseout="semborda(this)"src="damas.jpg" alt="damas.jpg" width="250" height="250"></td>
+          <td><img  onmouseover= "borda(this)"  onmouseout="semborda(this)"src="domino.jpg" alt="dominó.jpg" width="250" height="250"></td>
+          <td><img onmouseover= "borda(this)"  onmouseout="semborda(this)" src="xadres.jpg" alt="xadres.jpg" width="250" height="250"></td>
+        </tr>
+      </table>
+</body>
+</html>

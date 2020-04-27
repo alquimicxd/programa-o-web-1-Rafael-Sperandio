@@ -1,86 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-    <!-- header, nav, main, footer--> 
-    <!--   class="titulo"       -->
-    <!--    id = tabela1          -->
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    nav {
 
-        <script>
-            function aparece(x,t) {
-             var y =document.getElementsByClassName(x);
-             var i=0;
-              while (i<t) { 
-                  y[i].style.display='block';
-                  i++;
-              }
-              
-            }
-            
-            function desaparece(x,t) {
-           var y =document.getElementsByClassName(x);
-              var i=0;
-              while (i<t) {
-                  y[i].style.display='none';
-                  i++;
-              }
-            }
-            </script>
-    </head>
-   
-
-    <header class="titulo" >
-    <h1 >Cabeçalho da página</h1>
-    </header>
-
-
-    <nav class="titulo space" style="flex-grow: 0.5">
-
-    <div onmouseover= "aparece('Institucional',2)"  onmouseout="desaparece('Institucional',2)">
-    <h1 class="space">Institucional</h1>
-    <h1 class="none Institucional">Localização </h1>
-    <h1 class="none Institucional">Estrutura </h1>
-    </div>
-    <div onmouseover= "aparece('Produtos',3)"  onmouseout="desaparece('Produtos',3)">
-    <h1 class="space">Produtos</h1>
-    <h1 class= "none Produtos"> Notebooks</h1>
-    <h1 class= "none Produtos"> Celulares</h1>
-    <h1 class= "none Produtos"> Eletrodomésticos</h1>
-    </div>
-    <div onmouseover= "aparece('Sobre',1)"  onmouseout="desaparece('Sobre',1)">
-    <h1 class="space">Sobre</h1>
-    <h1 class="none Sobre">Contato</h1>
-    </div>
-
-    </nav>
+      /*
+      border: 2px red solid;
+      background-color: #06c;
+      */
+    }
+    nav ul {
+      
+      padding: 0px;
+      
+      margin-left: 5px;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .partemenu{
+      width: 30px;
+      height: 25px;
+      background-color: darkblue;
+      font-size: large;
+      text-align: center;
+      border: black solid 2px;
+    }
     
- 
+    nav a {
+      
+      color: lightblue;
+    }
+    .menu ul {
+      display: none;
+    }
+    
+    .menu li:hover ul {
 
-<main  style="flex-grow: 10" >
-    <h1>Conteúdo principal</h1>
-    <p>Cores:</p>
-    <ul>
-    <li> #0066aa (tom de azul escuro)</li>
-    <li>#cdf0ff (tom azul claro)</li>
-    <li>#ff0000 (vemelho)</li>
-    <li> #000000 (preto)</li>
-    <li> #ffffff (branco)</li>
-</ul>
+      position: absolute;
+      display: block;
+      
+      padding: 8px ;
+      
+    }
+    .menu li:hover ul li{
+      
+      margin-bottom: 3px;
+      height: 30px;
+      font-size: large;
+      text-align: center;
+      background-color: purple;
+      border: 2px black solid;
 
-
-
-</main>
-
-
-
-
-<footer class="titulo">
-    <h1 >Rodapé da pagina</h1>
-</footer>
+    }
+    .col-30{
+    
+  float: left;
+  width: 30%;
+    }
+    .col-33 {
+  float: left;
+  width: 33%;
+  margin-top: 6px;
+}
+    
+  </style>
+</head>
 <body>
-
+  <nav>
+    <ul class="menu ">
+      <li class="partemenu col-33">
+      <a href="#menu1"> institucional</a>
+        <ul class="col-30">
+          <li><a href="#submenu11">Localização</a></li>
+          <li><a href="#submenu12">Estrutura</a></li>
+        </ul>
+      </li>
+      <li class="partemenu col-33">
+        <a href="#menu2"> produtos  </a>
+        <ul class="col-30">
+          <li><a href="#submenu21">Notebooks</a></li>
+          <li><a href="#submenu22"> Celulares</a></li>
+          <li><a href="#submenu23">Eletrodoméstico</a></li>
+        </ul>
+      </li>
+      <li class="partemenu col-33">
+        <a href="#menu3">Sobre</a>
+        <ul class="col-30">
+          <li><a href="#submenu31">Contato </a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
 </body>
 </html>

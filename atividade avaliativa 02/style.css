@@ -10,15 +10,7 @@ header{
 footer{
   margin: 20px 20px ;
 }
-  main{
-    margin-left: 40px;
-    margin-right: 40px;
-    color:#000000;
-    
-    background-color: #ffffff;
-    /**/
-    border:#000000  solid 6px; 
-  }
+ 
 .titulo{
     margin-left: 40px;
     margin-right: 40px;
@@ -67,6 +59,7 @@ h1.space{
 
 div.center{
   align-content: space-between;
+
 
 }
 @media only screen and (max-width: 600px) {

@@ -9,44 +9,102 @@
     <title>Document</title>
     <script>
         function submit() {
-            var val1=  document.getElementById("campo1").value;
-            var val2=  document.getElementById("campo2").value;
-            var val3=  document.getElementById("campo3").value;
-            var	numero	=parseFloat(val1)+ parseFloat(val2) +parseFloat(val3) ;
+            var val1=  parseInt(document.getElementById("campo1").value);
+            var val2=  parseInt(document.getElementById("campo2").value);
+            var val3=  parseInt(document.getElementById("campo3").value);
+            var	numero	=val1+ (val2) +(val3) ;
             /*
+
             var	numero	=	document.getElementById("par ou impar");
-            */
             alert(numero);
+            */
+            
              if((numero)%2==0){
-                alert("é par");
+                alert(numero+" é par");
              }else if(((numero)%2!=0)){
-                alert("é impar");
+                alert(numero+" é impar");
              }
 
         }
             </script>
+            <style>
+
+
+input[type=text] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  color: #4CAF50;
+  display: inline-block;
+}
+
+button {
+  background-color: #4CAF60;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  
+  cursor: pointer;
+  float: left;
+}
+
+
+
+.col-33 {
+float: left;
+  width: 33%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .col-33{
+    width: 100%;
+    margin-top: 0;
+  }
+}
+            </style>
 </head>
 <body>
-    <!-- teste pra ver a tela em 600px
+    <!-- teste pra ver a tela em 600px 
+        h1 class="titulo1"> alo</h1>
     <h1 class="titulo1 ">besteira </h1> -->
-    <form action="submit()" class="flex1 flex2">
-        
-        <div>
+    <div class="container">
+    <form >
+    <div  class="row">
+        <div  class="col-33">
         <label for="fname" >val 1:</label><br>
-        <input type="text" id="campo1" name="fname" value=""><br>
+        <input  type="number" id ="campo1" name="fname" value=""><br>
         </div>
-        <div>
-            <label for="fname">val 2:</label><br>
-            <input type="text" id="campo2" name="fname" value=""><br>
+        <div class="col-33">
+            <label for="fname1" >val 2:</label><br>
+            <input type="number" id="campo2" name="fname1" value=""><br>
         </div> 
-        <div>
-            <label for="fname">val 3:</label><br>
-            <input type="text" id="campo3" name="fname" value=""><br>
+        <div class="col-33">
+            <label for="fname2">val 3:</label><br>
+            <input type="number" id="campo3" name="fname2" value=""><br>
+            <!-- tem como forçar number com java script -->
         </div> 
     
+    </div>
+      
     </form>
-      <button onclick="submit()">somar valores</button>
+    <button onclick="submit()">somar valores</button>
          <h1 id="par ou impar"> </h1>
          <!-- se quiser fazer aparecer em um h1  olhar html formulario . txt -->
+         <div>
 </body>
 </html>

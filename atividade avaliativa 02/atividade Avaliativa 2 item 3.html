@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css item 4.css">
     <script>
         function criaLista() {
-        var elemento_pai = document.body;
+        var elemento_pai = document.getElementById("retorno");
         var listaUL = document.createElement("UL");
-        listaUL.style.font = " 16px arial,";
-        listaUL.style.color = "blue";
+        elemento_pai.style.font = " 16px arial,";
+        elemento_pai.style.color = "blue";
         var	palavras = ["abacate","banana","cebola","melancia"];
         for	(var	i	=	0;	i	<	palavras.length;	i++)	{
 		var aux = palavras[i];
@@ -18,7 +19,7 @@
         li.appendChild(t);
         listaUL.appendChild(li)
         }
-        elemento_pai.appendChild(listaUL);
+        elemento_pai.innerHTML= listaUL.innerHTML;
         }
 
     </script>
@@ -26,8 +27,9 @@
 <body>
     
        
-    <button onclick="criaLista()">cria uma lista</button>
-    <strong color = "blue"  font = " 16px arial," > titulo em negrito </strong>
+    <button onclick="criaLista()" >cria uma lista</button>
+    <h1 class="item3"   > titulo em negrito </h1>
+    <ul id ="retorno">lista </ul>
      <!--ainda falta O texto da lista deve ser em fonte “Arial”
         , tamanho 16, cor azul. 
         Coloque um título para essa lista, 
